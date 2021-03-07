@@ -1,114 +1,63 @@
-<html>
-    <head>
-        <title>About me</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+</head>
+<body>
+    <header id="masthead">
+     <div class="conatainer">
+      <a href="index.html" id="logo">Your Name</a>
+        <nav>
+          <a href="index.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+     </div>
+    </header>
 
-       
-
-
-    </head>
-    <body>
-        <header id="masthead">
-          <div class="container">
-         
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <div id="main-container" class="container">
+        <section class="main-container">
+          <h1>Contact</h1>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="index.html">About Me</a>
-                    <a class="dropdown-item" href="portfolio.html">Portfolio</a>
-                    <a class="dropdown-item" href="contact.html">Contact Me</a>
-                    
-                    <div class="dropdown-divider"></div>
-                    
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <form id="contact-form">
+              <ul>
+                  <li>
+                     <label for="name">Name</label>
+                     <input type="text" name="name" id="name" placeholder="Ashim sharma" required="required">
+                  </li>
+                  <li>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
+                 </li>
+                 <li>
+                     <label for="message">Message</label>
+                     <textarea id="message" name="message"
+                     required="required"></textarea>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-
-            </div>
-        </header>  
-          <div id="main-container" class="container">
-                <section class="main-section">
-                        <h1>Contact</h1>
-                  
-                        <form id="contact-form">
-                          <ul>
-                            <li>
-                              <label for="name">Name</label>
-                              <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-                            </li>
-                            <li>
-                              <label for="email">Email</label>
-                              <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                            </li>
-                            <li>
-                              <label for="message">Message</label>
-                              <textarea id="message" name="message" required="required"></textarea>
-                            </li>
-                          </ul>
-                          <input type="submit">
-                        </form>
-                  
-                    </section>
-                  
-            </div>
-
-        
-        <section class="sidebar">
-                <div id="connect">
-                    <h2>Connect with me</h2>
-                    <img src="assets/imgs/github.png" class="social" alt="github">
-                    <img src="assets/imgs/linkedin.png" class="social" alt="linkedin">
-                    <img src="assets/imgs/stackoverflow.png" class="social" alt="stackoverflow">
-  
-  
-                 </div>
+              <input type="submit" name="submit">
+          </form>
         </section>
-  
 
-
-
-      
-
-       <footer>
-        <div class="container">
-         &copy: Ashim sharma 2019
-
-        </div>
-
-
-
-       </footer>
-       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <section class="sidebar">
+          <div id="connect">
+            <h2>Connect with Me</h2>
+                <img src="./assets/imgs/github.png" class="social" alt="Github">
+                <img src="./assets/imgs/linkedin.png" class="social" alt="Linkedin">
+                <img src="./assets/imgs/stackoverflow.png" class="social" alt="Stackoverflow">
+          </div>
+        </section>
+    </div>
     
-    </body>
-
+    <footer>
+    <div class="container">
+       &copy; Copyright 2021 Ashim Sharma
+    </div>
+    </footer>
+    
+      
+</body>
 </html>
